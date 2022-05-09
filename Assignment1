@@ -1,0 +1,19 @@
+#program to remove student id details in dictionary.
+n=int(input('Enter number of values:'))
+d1={}
+d2={}
+d3={}
+for i in range(n):
+	sid=int(input("Enter the student id:"))
+	sname=input("Enter the student name:")
+	sclass=input("Enter the student  class :")
+	sresult=float(input("Enter the result of student:"))
+	d1[sid]=sname
+	d2[sid]=sclass
+	d3[sid]=sresult
+print(d1,d2,d3)	
+a=int(input("Enter the student id:"))
+d1.pop(a)
+d2.pop(a)
+d3.pop(a)
+print(d1,d2,d3)
